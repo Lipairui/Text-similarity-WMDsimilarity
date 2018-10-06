@@ -100,3 +100,6 @@ def example():
         print(docs1[i])
         print(docs2[i])
         print('Similarity: %.4f' %sims[i])
+        
+if __name__=='__main__':
+    example()
