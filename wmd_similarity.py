@@ -1,8 +1,12 @@
 import pandas as pd
 import time
+import re
 import codecs
 from gensim.models import Word2Vec, KeyedVectors
 from gensim.similarities import WmdSimilarity
+from nltk import word_tokenize
+import jieba
+
 def LogInfo(stri):
     print(str(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))+'  '+stri)
     
