@@ -1,6 +1,11 @@
 import pandas as pd
+import time
+import codecs
 from gensim.models import Word2Vec, KeyedVectors
 from gensim.similarities import WmdSimilarity
+def LogInfo(stri):
+    print(str(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))+'  '+stri)
+    
 def preprocess_data_en(stopwords,doc):
     '''
     Function: preprocess data in Chinese including cleaning, tokenzing...
